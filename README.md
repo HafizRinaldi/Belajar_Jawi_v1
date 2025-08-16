@@ -2,6 +2,7 @@
 
 Aplikasi Android yang dibuat dengan Flutter ini menggunakan model *deep learning* MobileNetV2 untuk mendeteksi dan mengklasifikasikan huruf-huruf Jawi secara *real-time* maupun melalui gambar dari galeri.
 
+<img src="screenshoot/1.home_page.png" width="200"> <img src="screenshoot/2.history_page.png" width="200"> <img src="screenshoot/3.recent_page.png" width="200">
 
 ## 📜 Tentang Aplikasi
 
