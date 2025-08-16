@@ -2,7 +2,7 @@
 
 Aplikasi Android yang dibuat dengan Flutter ini menggunakan model *deep learning* MobileNetV2 untuk mendeteksi dan mengklasifikasikan huruf-huruf Jawi secara *real-time* maupun melalui gambar dari galeri.
 
-<img src="a/home_page.jpg" width="300">
+<img src="screenshoot/home_page.jpg" width="300">
 
 ## 📜 Tentang Aplikasi
 
@@ -14,8 +14,6 @@ Aplikasi ini dirancang untuk memudahkan pengguna dalam mengenali berbagai bentuk
 - **Deteksi dari Galeri:** Selain deteksi langsung, pengguna juga dapat memilih gambar yang sudah ada dari galeri untuk dianalisis.
 - **Riwayat Deteksi:** Setiap hasil klasifikasi akan disimpan dalam menu riwayat, memungkinkan pengguna untuk melihat kembali hasil deteksi sebelumnya.
 - **Antarmuka Sederhana:** Desain antarmuka yang bersih dan intuitif membuat aplikasi ini mudah digunakan oleh berbagai kalangan.
-
-<img src="a/Screenshot_1755363470.png" width="300">
 
 ## 🧠 Teknologi yang Digunakan
 
@@ -38,8 +36,6 @@ Aksara Jawi adalah sistem tulisan yang diadaptasi dari aksara Arab untuk menulis
 4.  **Lihat Hasil:** Hasil klasifikasi akan ditampilkan di layar.
 5.  **Simpan & Riwayat:** Hasil akan otomatis tersimpan di menu **"Riwayat"** untuk diakses kembali.
 
-<img src="a/Screenshot_1755363466.png" width="300">
-
 ## 🔠 Daftar Huruf yang Dapat Dikenali
 
 Berdasarkan file `labels.txt`, model ini dapat mengenali variasi dari huruf-huruf Jawi berikut:
@@ -50,3 +46,4 @@ Berdasarkan file `labels.txt`, model ini dapat mengenali variasi dari huruf-huru
 -   Ga (Terpisah, Terhubung di Awal, Tengah, dan Akhir)
 -   Va (Terpisah dan Terhubung di Akhir)
 -   Ca (Terpisah, Terhubung di Awal, Tengah, dan Akhir)
+
