@@ -1,54 +1,52 @@
-# Jawi Letter Detection Application with MobileNetV2
+# Aplikasi Deteksi Huruf Jawi dengan MobileNetV2
 
-This Android application, built with Flutter, uses a MobileNetV2 deep learning model to detect and classify Jawi letters in real-time or from images in the gallery.
+Aplikasi Android yang dibuat dengan Flutter ini menggunakan model *deep learning* MobileNetV2 untuk mendeteksi dan mengklasifikasikan huruf-huruf Jawi secara *real-time* maupun melalui gambar dari galeri.
 
-<img src="screenshoot/Screenshot_1755363446.jpg" width="300">
+<img src="a/home_page.jpg" width="300">
 
-## 📜 About The Application
+## 📜 Tentang Aplikasi
 
-This app is designed to help users recognize various forms of Jawi letters, including their isolated (*terpisah*) forms as well as their connected forms at the beginning, middle, and end of a word. Built for the Android platform using the **Flutter** framework, this application leverages the lightweight and efficient MobileNetV2 architecture, making it ideal for running on mobile devices.
+Aplikasi ini dirancang untuk memudahkan pengguna dalam mengenali berbagai bentuk huruf Jawi, termasuk bentuk tunggal (*terpisah*) maupun bentuk bersambung di awal, tengah, dan akhir kata. Dibangun untuk platform Android menggunakan framework **Flutter**, aplikasi ini memanfaatkan arsitektur MobileNetV2 yang ringan dan efisien, sehingga cocok untuk dijalankan pada perangkat *mobile*.
 
-## ✨ Features
+## ✨ Fitur-fitur
 
-- **Real-time Detection:** Users can point their camera directly at Jawi script to get an instant classification.
-- **Detection from Gallery:** In addition to live detection, users can also select existing images from their gallery for analysis.
-- **Detection History:** Every classification result is saved in the history menu, allowing users to review previous detections.
-- **Simple Interface:** A clean and intuitive interface design makes this application easy to use for everyone.
+- **Deteksi Real-time:** Pengguna dapat langsung mengarahkan kamera ke tulisan Jawi untuk mendapatkan hasil klasifikasi secara langsung.
+- **Deteksi dari Galeri:** Selain deteksi langsung, pengguna juga dapat memilih gambar yang sudah ada dari galeri untuk dianalisis.
+- **Riwayat Deteksi:** Setiap hasil klasifikasi akan disimpan dalam menu riwayat, memungkinkan pengguna untuk melihat kembali hasil deteksi sebelumnya.
+- **Antarmuka Sederhana:** Desain antarmuka yang bersih dan intuitif membuat aplikasi ini mudah digunakan oleh berbagai kalangan.
 
-## 🧠 Technology Used
+<img src="a/Screenshot_1755363470.png" width="300">
+
+## 🧠 Teknologi yang Digunakan
 
 ### Flutter
-The application's user interface is built using Flutter, Google's UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.
+Antarmuka pengguna aplikasi ini dibangun menggunakan Flutter, *UI toolkit* dari Google untuk membangun aplikasi *multi-platform* yang indah dan dapat dikompilasi secara *native* dari satu basis kode.
 
-### Jawi Script
-The Jawi script is a writing system adapted from the Arabic script for writing the Malay language. In addition to the standard Arabic letters, there are several additional letters in the Jawi script to represent sounds that do not exist in Arabic, such as 'Ca', 'Nga', 'Pa', 'Ga', and 'Nya'. This application can recognize these letters in their various forms.
+### Aksara Jawi
+Aksara Jawi adalah sistem tulisan yang diadaptasi dari aksara Arab untuk menuliskan Bahasa Melayu. Aplikasi ini dapat mengenali huruf-huruf Jawi tambahan seperti 'Ca', 'Nga', 'Pa', 'Ga', dan 'Nya' dalam berbagai bentuknya.
 
 ### MobileNetV2
-**MobileNetV2** is a Convolutional Neural Network (CNN) architecture optimized for devices with limited resources. Its main advantage lies in its high computational efficiency without a significant sacrifice in accuracy. The model for this application was specifically **trained and augmented** to improve its accuracy and robustness in identifying Jawi characters from various image sources. With this trained MobileNetV2 model, the application can perform image classification quickly and accurately directly on the user's device.
+**MobileNetV2** adalah arsitektur *Convolutional Neural Network* (CNN) yang dioptimalkan untuk perangkat dengan sumber daya terbatas. Model untuk aplikasi ini melalui beberapa tahap. **Sebelumnya, ada proses *data science* untuk membersihkan dataset** dari data yang tidak relevan atau berkualitas buruk. Setelah dataset bersih, model secara spesifik **dilatih dan di-augmentasi** untuk meningkatkan akurasi dan ketahanannya dalam mengidentifikasi karakter Jawi dari berbagai sumber gambar. Dengan model yang telah terlatih ini, aplikasi dapat melakukan klasifikasi gambar dengan cepat dan akurat langsung di perangkat pengguna.
 
-## 🚀 How to Use
+## 🚀 Cara Penggunaan
 
-1.  **Open the Application:** You will be greeted by the main page.
-2.  **Select Image Source:**
-    * Choose **"Ambil Gambar" (Take Picture)** to use the camera.
-    * Choose **"Galeri" (Gallery)** to select an image from your device's storage.
-3.  **Classification Process:** After the image is taken or selected, the application will process it to detect the Jawi letter.
-4.  **View Results:** The classification result will be displayed on the screen, complete with the detected letterform.
-5.  **Save & History:** The result will be automatically saved in the **"Riwayat" (History)** menu for future access.
+1.  **Buka Aplikasi:** Anda akan disambut dengan halaman utama.
+2.  **Pilih Sumber Gambar:**
+    * Pilih **"Ambil Gambar"** untuk menggunakan kamera.
+    * Pilih **"Galeri"** untuk memilih gambar dari penyimpanan perangkat Anda.
+3.  **Proses Klasifikasi:** Aplikasi akan memproses gambar untuk mendeteksi huruf Jawi.
+4.  **Lihat Hasil:** Hasil klasifikasi akan ditampilkan di layar.
+5.  **Simpan & Riwayat:** Hasil akan otomatis tersimpan di menu **"Riwayat"** untuk diakses kembali.
 
-## 🔠 List of Recognizable Letters
+<img src="a/Screenshot_1755363466.png" width="300">
 
-Based on the `labels.txt` file, this model can recognize variations of the following Jawi letters:
+## 🔠 Daftar Huruf yang Dapat Dikenali
 
-- Nya (Isolated, Initial, Medial, and Final forms)
-- Nga (Isolated, Initial, Medial, and Final forms)
-- Pa (Isolated, Initial, Medial, and Final forms)
-- Ga (Isolated, Initial, Medial, and Final forms)
-- Va (Isolated and Final forms)
-- Ca (Isolated, Initial, Medial, and Final forms)
+Berdasarkan file `labels.txt`, model ini dapat mengenali variasi dari huruf-huruf Jawi berikut:
 
-
-
-
-
-
+-   Nya (Terpisah, Terhubung di Awal, Tengah, dan Akhir)
+-   Nga (Terpisah, Terhubung di Awal, Tengah, dan Akhir)
+-   Pa (Terpisah, Terhubung di Awal, Tengah, dan Akhir)
+-   Ga (Terpisah, Terhubung di Awal, Tengah, dan Akhir)
+-   Va (Terpisah dan Terhubung di Akhir)
+-   Ca (Terpisah, Terhubung di Awal, Tengah, dan Akhir)
