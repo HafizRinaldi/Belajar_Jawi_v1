@@ -13,7 +13,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final cameras = await availableCameras();
 
-  final firstCamera = cameras.first;
+  final firstCamera = cameras[0];
   runApp(MyApp(camera: firstCamera));
 }
 
@@ -104,9 +104,9 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         bottomBarItems: const [
           BottomBarItem(
-            inActiveItem: Icon(Icons.home_filled, color: Colors.white),
-            activeItem: Icon(Icons.home_filled, color: Colors.white),
-            itemLabel: 'Beranda',
+            inActiveItem: Icon(Icons.refresh_outlined, color: Colors.white),
+            activeItem: Icon(Icons.refresh, color: Colors.white),
+            itemLabel: "Hasil",
           ),
           BottomBarItem(
             inActiveItem: Icon(Icons.camera_alt, color: Colors.white),
@@ -114,9 +114,9 @@ class _MyHomePageState extends State<MyHomePage> {
             itemLabel: 'Deteksi',
           ),
           BottomBarItem(
-            inActiveItem: Icon(Icons.person, color: Colors.white),
-            activeItem: Icon(Icons.person, color: Colors.white),
-            itemLabel: 'Profil',
+            inActiveItem: Icon(Icons.history, color: Colors.white),
+            activeItem: Icon(Icons.history, color: Colors.white),
+            itemLabel: 'Histori',
           ),
         ],
         onTap: (index) {
