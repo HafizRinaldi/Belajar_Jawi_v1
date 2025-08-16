@@ -6,12 +6,12 @@ import 'package:image_picker/image_picker.dart';
 
 class CameraScreen extends StatefulWidget {
   final CameraDescription camera;
-  final Function(File) onImageSelected; // Tambahkan parameter ini
+  final Function(File) onImageSelected;
 
   const CameraScreen({
     Key? key,
     required this.camera,
-    required this.onImageSelected, // Tambahkan parameter ini
+    required this.onImageSelected,
   }) : super(key: key);
 
   @override
@@ -142,3 +142,4 @@ class _CameraScreenState extends State<CameraScreen> {
     );
   }
 }
+
