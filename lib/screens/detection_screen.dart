@@ -1,4 +1,3 @@
-// lib/app/presentation/screens/detection/detection_screen.dart
 import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
@@ -191,3 +190,4 @@ class _DetectionScreenState extends State<DetectionScreen> {
     );
   }
 }
+
