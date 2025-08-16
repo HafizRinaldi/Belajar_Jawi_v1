@@ -48,6 +48,56 @@ Berdasarkan file `labels.txt`, model ini dapat mengenali variasi dari huruf-huru
 -   Ca (Terpisah, Terhubung di Awal, Tengah, dan Akhir)
 
 
+# Jawi Character Detection Application with MobileNetV2
+
+This Android application, built with Flutter, uses the MobileNetV2 deep learning model to detect and classify Jawi characters in real-time and from gallery images.
+
+<img src="screenshoot/1.home_page.png" width="200"> <img src="screenshoot/2.history_page.png" width="200"> <img src="screenshoot/3.recent_page.png" width="200">
+
+## 📜 About the Application
+
+This application is designed to help users recognize various forms of Jawi letters, including their isolated forms as well as their connected forms at the beginning, middle, and end of a word. Built for the Android platform using the **Flutter** framework, this app utilizes the lightweight and efficient MobileNetV2 architecture, making it suitable for running on mobile devices.
+
+## ✨ Features
+
+- **Real-time Detection:** Users can point their camera directly at Jawi script to get instant classification results.
+- **Detection from Gallery:** In addition to live detection, users can also select existing images from their gallery for analysis.
+- **Detection History:** Every classification result is saved in the history menu, allowing users to review previous detections.
+- **Simple Interface:** A clean and intuitive user interface design makes the application easy to use for everyone.
+
+## 🧠 Technology Used
+
+### Flutter
+The application's user interface is built using Flutter, Google's UI toolkit for building beautiful, natively compiled, multi-platform applications from a single codebase.
+
+### Jawi Script
+The Jawi script is a writing system adapted from the Arabic script for writing the Malay language. This application can recognize additional Jawi letters such as 'Ca', 'Nga', 'Pa', 'Ga', and 'Nya' in their various forms.
+
+### MobileNetV2
+**MobileNetV2** is a Convolutional Neural Network (CNN) architecture optimized for devices with limited resources. The model for this application went through several stages. **Previously, there was a data science process to clean the dataset** from irrelevant or poor-quality data. Once the dataset was clean, the model was specifically **trained and augmented** to improve its accuracy and robustness in identifying Jawi characters from various image sources. With this trained model, the application can perform fast and accurate image classification directly on the user's device.
+
+## 🚀 How to Use
+
+1.  **Open the Application:** You will be greeted by the main page.
+2.  **Choose Image Source:**
+    * Select **"Take a Picture"** to use the camera.
+    * Select **"Gallery"** to choose an image from your device's storage.
+3.  **Classification Process:** The application will process the image to detect Jawi characters.
+4.  **View Results:** The classification results will be displayed on the screen.
+5.  **Save & History:** The results will be automatically saved in the **"History"** menu for future access.
+
+## 🔠 List of Recognizable Characters
+
+Based on the `labels.txt` file, this model can recognize variations of the following Jawi letters:
+
+-   Nya (Isolated, Initial, Medial, and Final)
+-   Nga (Isolated, Initial, Medial, and Final)
+-   Pa (Isolated, Initial, Medial, and Final)
+-   Ga (Isolated, Initial, Medial, and Final)
+-   Va (Isolated and Final)
+-   Ca (Isolated, Initial, Medial, and Final)
+
+
 
 
 
