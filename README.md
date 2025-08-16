@@ -2,6 +2,8 @@
 
 This Android application, built with Flutter, uses a MobileNetV2 deep learning model to detect and classify Jawi letters in real-time or from images in the gallery.
 
+![Tampilan Utama Aplikasi](Screenshot_1755363446.jpg)
+
 ## 📜 About The Application
 
 This app is designed to help users recognize various forms of Jawi letters, including their isolated (*terpisah*) forms as well as their connected forms at the beginning, middle, and end of a word. Built for the Android platform using the **Flutter** framework, this application leverages the lightweight and efficient MobileNetV2 architecture, making it ideal for running on mobile devices.
@@ -44,3 +46,4 @@ Based on the `labels.txt` file, this model can recognize variations of the follo
 - Ga (Isolated, Initial, Medial, and Final forms)
 - Va (Isolated and Final forms)
 - Ca (Isolated, Initial, Medial, and Final forms)
+
