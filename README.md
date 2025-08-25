@@ -1,6 +1,7 @@
 # BelajarJawi: Aplikasi Klasifikasi Huruf Jawi Berbasis AI
 
   <img src="Logo_Belajar_Jawi.png" width="200"> 
+  
 ## 📖 1. Latar Belakang & Deskripsi Proyek
 
 Aksara Jawi adalah warisan budaya tak ternilai di wilayah Nusantara, namun ketersediaan sumber daya digital untuk pembelajaran dan pelestariannya masih sangat terbatas. Kurangnya dataset yang komprehensif dan alat bantu modern menjadi tantangan utama bagi para peneliti dan peminat aksara ini.
