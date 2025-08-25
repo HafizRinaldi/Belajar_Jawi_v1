@@ -68,6 +68,8 @@ Berbekal validasi tersebut, aplikasi **BelajarJawi** mengimplementasikan model *
 | :---: | :---: | :---: |
 | <img src="demo and screenshot/main_page.png" width="200"> | <img src="demo and screenshot/history_page.png" width="200"> | <img src="demo and screenshot/result_page.png" width="200"> |
 
+<img src="demo and screenshot/app_demo.gif" alt="Animasi loading" width="300">
+
 ---
 
 ## ⚖️ 7. Lisensi & Ketersediaan Model
