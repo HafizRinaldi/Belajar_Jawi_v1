@@ -1,6 +1,6 @@
 # BelajarJawi: Aplikasi Klasifikasi Huruf Jawi Berbasis AI
 
-![App Screenshot](URL_SCREENSHOT_UTAMA_ANDA)
+<img src="demo and screeshot/main_page.jpg" withd="200">
 
 ## 📖 1. Latar Belakang & Deskripsi Proyek
 
@@ -78,3 +78,4 @@ Untuk dapat menjalankan aplikasi ini, Anda perlu menyediakan file model ONNX And
 2.  Ekspor model tersebut ke dalam format `.onnx`.
 3.  Letakkan file model Anda di direktori `assets/models/` dan ganti nama `assetPath` di `home_screen.dart` agar sesuai dengan nama file model Anda.
 4.  Pastikan Anda telah menambahkan `assets/models/` ke dalam file `pubspec.yaml`.
+
