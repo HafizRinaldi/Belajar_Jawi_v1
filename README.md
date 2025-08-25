@@ -61,7 +61,7 @@ Proyek ini memberikan pembelajaran mendalam tentang arsitektur aplikasi Flutter,
 
 | Halaman Deteksi | Halaman Hasil | Halaman Riwayat |
 | :---: | :---: | :---: |
-| <img src="demo and screenshot/app_demo.gif" width="200"> |  <img src="demo and screenshot/history_page.png" width="200"> | <img src="demo and screenshot/result_page.png" width="200"> |
+| <img src="demo and screenshot/main_page.gif" width="200"> |  <img src="demo and screenshot/history_page.png" width="200"> | <img src="demo and screenshot/result_page.png" width="200"> |
 
 ---
 
