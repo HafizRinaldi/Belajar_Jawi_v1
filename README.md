@@ -1,6 +1,6 @@
 # BelajarJawi: Aplikasi Klasifikasi Huruf Jawi Berbasis AI
 
-<img src="demo and screenshot/main_page.png">
+<img src="demo and screenshot/main_page.png" withd="200">
 
 ## 📖 1. Latar Belakang & Deskripsi Proyek
 
