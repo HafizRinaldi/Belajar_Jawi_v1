@@ -1,72 +1,80 @@
 # BelajarJawi: Aplikasi Klasifikasi Huruf Jawi Berbasis AI
 
-<p align="center">
-  <img src="Logo_Belajar_Jawi.png" width="200">
-</p>
+  <img src="Logo_Belajar_Jawi.png" width="200"> 
+  
+## 📖 1. Latar Belakang & Deskripsi Proyek
 
-## 1. Latar Belakang & Deskripsi Proyek
+Aksara Jawi adalah warisan budaya tak ternilai di wilayah Nusantara, namun ketersediaan sumber daya digital untuk pembelajaran dan pelestariannya masih sangat terbatas. Kurangnya dataset yang komprehensif dan alat bantu modern menjadi tantangan utama bagi para peneliti dan peminat aksara ini.
 
-Aksara Jawi adalah warisan budaya tak ternilai di wilayah Nusantara, khususnya di Aceh, yang ditemukan pada berbagai peninggalan kuno seperti nisan, mata uang, dan manuskrip Islam yang berusia hingga 600 tahun. Upaya pelestarian melalui digitalisasi sangat penting, namun terhambat oleh tantangan besar: kelangkaan dataset aksara Jawi yang komprehensif dan tersedia secara online. Keterbatasan ini menghambat kemajuan penelitian dan pengembangan teknologi krusial seperti *Optical Character Recognition* (OCR).
-
-**BelajarJawi** lahir sebagai jembatan antara penelitian akademis dan aplikasi praktis untuk mengatasi masalah ini. Aplikasi ini merupakan implementasi nyata dari penelitian **"Augmentation of Additional Arabic Dataset for Jawi Writing and Classification Using Deep Learning"**, yang merupakan hasil publikasi dari saya dan tim peneliti. Penelitian kami berhasil menciptakan dataset baru dan membuktikan efektivitas model *deep learning* untuk klasifikasi aksara Jawi. Dengan "otak" berupa model AI yang canggih, aplikasi ini memungkinkan pengguna untuk mengenali dan mempelajari huruf Jawi tambahan secara instan, mengubah ponsel cerdas menjadi alat edukasi dan pelestarian budaya yang ampuh.
+**BelajarJawi** lahir sebagai solusi untuk tantangan tersebut. Aplikasi mobile ini dirancang untuk membantu pengguna mengenali dan mempelajari huruf-huruf Jawi tambahan melalui teknologi pengenalan gambar. Dengan memanfaatkan kecerdasan buatan Deep Learning, aplikasi ini berfungsi sebagai jembatan antara warisan budaya dan teknologi modern, menjadikannya alat yang relevan untuk edukasi dan pelestarian.
 
 ---
 
-## 2. 🧠 Inti Teknologi: Kekuatan Deep Learning
+## ✨ 2. Fitur Utama
 
-Keunggulan utama aplikasi ini terletak pada implementasi model *deep learning* yang dilatih berdasarkan metodologi dari penelitian yang saya dan tim publikasikan.
-
-### A. Masalah: Ketiadaan Dataset Jawi
-Penelitian di bidang pengenalan aksara Jawi sangat terkendala karena dataset yang ada hanya berisi sedikit sampel (sekitar 10 sampel per karakter) dan tidak tersedia secara online. Tanpa data yang beragam dan bervolume besar, melatih model *deep learning* yang akurat hampir mustahil dilakukan.
-
-### B. Solusi Inovatif: Augmentasi Dataset
-Penelitian kami menawarkan solusi kreatif dengan melakukan **augmentasi dataset**. Caranya adalah dengan memanfaatkan dataset aksara Arab dan Urdu yang sudah ada dan kaya fitur, yaitu **HMBD, AHAWP, dan HUCD**. Prosesnya meliputi:
-* **Pra-pemrosesan & Segmentasi:** Gambar-gambar dari dataset sumber diproses untuk meningkatkan kualitas dan memisahkan karakter dari latar belakang.
-* **Rekayasa Spasial:** Teknik augmentasi unik diterapkan dengan cara mengekstrak komponen "titik" dari satu set gambar, lalu menempatkannya secara cerdas pada gambar karakter dasar lainnya untuk membentuk 6 karakter Jawi tambahan (seperti 'Ca', 'Nga', 'Pa', 'Ga') dalam 22 bentuk tulisan (terpisah, awal, tengah, dan akhir).
-* **Hasil:** Proses ini berhasil menciptakan dataset baru yang siap pakai dan dapat diakses publik, yang menjadi fondasi untuk melatih model AI modern.
-
-### C. Validasi Performa: Akurasi Terbukti
-Efektivitas dataset hasil augmentasi ini kami validasi dengan melatih dan menguji dua arsitektur *deep learning* terkemuka:
-* **InceptionV3:** Mencapai akurasi **95%**.
-* **ResNet34:** Menunjukkan performa terbaik dengan akurasi **96%**.
-
-Keberhasilan ini membuktikan secara ilmiah bahwa model *deep learning* mampu mengenali karakter Jawi hasil augmentasi dengan sangat akurat dan konsisten, bahkan untuk kelas karakter yang memiliki bentuk serupa.
-
-### D. Implementasi Aplikasi: `EfficientNet-B0`
-Aplikasi **BelajarJawi** mengimplementasikan model `EfficientNet-B0-AutoAugment_bs32_lr1em03.onnx`. Pemilihan model ini didasarkan pada keberhasilan yang telah divalidasi dalam penelitian kami. EfficientNet-B0 adalah arsitektur *state-of-the-art* yang terkenal dengan efisiensi komputasi dan akurasi tinggi, menjadikannya pilihan ideal untuk inferensi cepat dan akurat langsung di perangkat pengguna (*on-device*).
+-   **Klasifikasi Real-time:** Deteksi huruf Jawi secara instan dari gambar yang diambil melalui kamera atau galeri.
+-   **Akurasi Tinggi:** Ditenagai oleh model Deep Learning yang telah dilatih untuk mencapai akurasi tinggi, memastikan pengenalan yang andal.
+-   **Pembelajaran Interaktif:** Setiap hasil deteksi disertai dengan **penjelasan informatif** mengenai bentuk, nama, dan penggunaan huruf, mengubah aplikasi menjadi alat belajar yang efektif.
+-   **Riwayat Deteksi:** Semua hasil klasifikasi dapat disimpan ke dalam riwayat untuk dipelajari kembali di kemudian hari, lengkap dengan **waktu penyimpanan** untuk melacak kemajuan belajar.
+-   **UI Modern & Intuitif:** Antarmuka yang bersih dan mudah digunakan, dirancang dengan Flutter untuk pengalaman pengguna yang mulus di berbagai perangkat.
 
 ---
 
-## 3. Teknologi & Arsitektur
+## 🚀 3. Teknologi & Arsitektur
 
-* **Framework:** Flutter
-* **Bahasa:** Dart
-* **Deep Learning (On-Device AI):**
-    * **Model:** `EfficientNet-B0-AutoAugment_bs32_lr1em03.onnx`
-    * **Dasar Ilmiah:** Model ini dilatih menggunakan metodologi dan dataset yang diinspirasi oleh penelitian kami, yang membuktikan keberhasilan klasifikasi aksara Jawi dengan akurasi hingga 96%.
-    * **Runtime:** ONNX Runtime (`flutter_onnxruntime`) untuk inferensi *on-device* yang cepat, privat, dan tidak memerlukan koneksi internet.
-* **Database Lokal:** `sqflite` untuk manajemen riwayat deteksi.
-* **Manajemen State:** State diangkat ke widget `MainNavigator`.
+Proyek ini dibangun menggunakan tumpukan teknologi modern yang berfokus pada performa dan pengalaman pengguna.
 
----
-
-## 4. Fitur & Fungsionalitas
-
-* **Klasifikasi Real-time:** Deteksi huruf Jawi secara instan dari kamera atau galeri.
-* **Pembelajaran Interaktif:** Hasil deteksi dilengkapi penjelasan informatif mengenai huruf.
-* **Riwayat Deteksi:** Menyimpan semua hasil klasifikasi untuk ditinjau kembali.
-* **UI Modern & Intuitif:** Antarmuka yang bersih dan mudah digunakan.
+-   **Framework:** Flutter
+-   **Bahasa:** Dart
+-   **Deep Learning:**
+    -   **Model:** EfficientNet-B0 dengan strategi AutoAugment.
+    -   **Runtime:** ONNX Runtime (`flutter_onnxruntime`) untuk inferensi *on-device* yang cepat.
+-   **Database Lokal:** `sqflite` untuk manajemen data riwayat yang efisien dan persisten.
+-   **Manajemen State:** State diangkat ke widget `MainNavigator` untuk mengelola data hasil prediksi terakhir dan navigasi antar halaman.
+-   **UI/UX:**
+    -   **Navigasi:** `animated_notch_bottom_bar` untuk navigasi yang modern dan menarik.
+    -   **Asynchronous UI:** `FutureBuilder` digunakan untuk menangani state *loading*, *empty*, dan *data* secara elegan di halaman riwayat.
+-   **Utilitas:** `image_picker`, `intl` (untuk format tanggal), `image`.
 
 ---
 
-## 5. Lisensi & Ketersediaan Model
+## 💡 4. Tantangan & Pembelajaran
 
-* **Kode Sumber (Source Code):** Proyek ini dilisensikan di bawah **Lisensi MIT**.
-* **Model AI:** Model klasifikasi `EfficientNet-B0` adalah **aset pribadi (proprietary)** yang lahir dari penelitian akademis oleh saya dan tim, sehingga **tidak disertakan** dalam repositori ini.
+Selama pengembangan, beberapa tantangan utama yang dihadapi antara lain:
+1.  **Integrasi Model AI:** Memastikan model ONNX dapat berjalan efisien di dalam lingkungan Flutter dan menangani *pre-processing* gambar (resize, normalisasi) dengan benar sebelum inferensi.
+2.  **Manajemen State Lintas Halaman:** Mengelola state hasil prediksi terakhir agar dapat diakses oleh halaman "Hasil" setelah deteksi selesai di halaman "Deteksi", yang diselesaikan dengan menggunakan *callback function* dan mengangkat state ke widget induk (`MainNavigator`).
+3.  **Desain UI Responsif:** Merancang layout, terutama di halaman utama, agar tetap fungsional dan estetis di berbagai ukuran layar tanpa menyebabkan *overflow*.
+
+Proyek ini memberikan pembelajaran mendalam tentang arsitektur aplikasi Flutter, integrasi *on-device machine learning*, dan pentingnya desain UI/UX yang baik untuk memandu pengguna.
+
+---
+
+## 🎥 5. Video Demo
+
+*Rekam layar ponsel Anda saat menggunakan aplikasi untuk menunjukkan alur kerja secara penuh, lalu unggah ke YouTube sebagai "Unlisted" dan sisipkan link-nya di sini.*
+
+**[Lihat Demo Aplikasi BelajarJawi di YouTube](URL_VIDEO_YOUTUBE_ANDA)**
+
+---
+
+## 📸 6. Galeri Aplikasi
+
+| Halaman Deteksi | Halaman Hasil | Halaman Riwayat |
+| :---: | :---: | :---: |
+| <img src="demo and screenshot/main_page.gif" width="200"> |  <img src="demo and screenshot/history_page.png" width="200"> | <img src="demo and screenshot/result_page.png" width="200"> |
+
+---
+
+## ⚖️ 7. Lisensi & Ketersediaan Model
+
+-   **Kode Sumber (Source Code):** Proyek ini dilisensikan di bawah **Lisensi MIT**. Anda bebas menggunakan, memodifikasi, dan mendistribusikan kode ini sesuai dengan syarat yang tercantum dalam file `LICENSE`.
+
+-   **Model AI (`EfficientNet-B0-AutoAugment_bs32_lr1em03.onnx`):** Model klasifikasi yang telah dilatih adalah **aset pribadi (proprietary)** dan **tidak disertakan** dalam repositori ini. File model telah dikecualikan melalui `.gitignore`.
 
 ### Cara Menjalankan Proyek
-Untuk menjalankan aplikasi, Anda perlu menyediakan model ONNX Anda sendiri yang kompatibel.
-1.  Latih model klasifikasi gambar Anda.
-2.  Ekspor model ke format `.onnx`.
-3.  Letakkan file model di direktori `assets/models/` dan perbarui `assetPath` di `home_screen.dart`.
-4.  Pastikan `assets/models/` telah ditambahkan ke `pubspec.yaml`.
+Untuk dapat menjalankan aplikasi ini, Anda perlu menyediakan file model ONNX Anda sendiri yang kompatibel dengan input dan output yang diharapkan oleh aplikasi.
+
+1.  Latih model klasifikasi gambar Anda sendiri.
+2.  Ekspor model tersebut ke dalam format `.onnx`.
+3.  Letakkan file model Anda di direktori `assets/models/` dan ganti nama `assetPath` di `home_screen.dart` agar sesuai dengan nama file model Anda.
+4.  Pastikan Anda telah menambahkan `assets/models/` ke dalam file `pubspec.yaml`.
