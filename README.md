@@ -66,7 +66,7 @@ Berbekal validasi tersebut, aplikasi **BelajarJawi** mengimplementasikan model *
 
 | Demo Aplikasi | Halaman Deteksi | Halaman Hasil | Halaman Riwayat |
 | :---: | :---: | :---: | :---: |
-| <img src="demo and screenshot/app_demo.gif" width="200"> | <img src="demo and screenshot/main_page.png" width="200"> | <img src="demo and screenshot/result_page.png" width="200"> | <img src="demo and screenshot/history_page.png" width="200" height ="500"> | 
+| <img src="demo and screenshot/app_demo.gif" width="200"> | <img src="demo and screenshot/main_page.png" width="200"> | <img src="demo and screenshot/result_page.png" width="200"> | <img src="demo and screenshot/history_page.png" width="200" height ="100"> | 
 
 
 
